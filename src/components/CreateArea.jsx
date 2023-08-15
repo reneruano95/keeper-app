@@ -8,7 +8,7 @@ function CreateArea(props) {
     title: "",
     content: ""
   });
-  
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   function handleChange(event) {
@@ -29,7 +29,7 @@ function CreateArea(props) {
   return (
     <div>
       <form className="create-note">
-        { isExpanded ? <input
+        {isExpanded ? <input
           value={note.title}
           onChange={handleChange}
           name="title"
@@ -52,7 +52,7 @@ function CreateArea(props) {
               content: ""
             });
           }} >
-          <AddIcon />
+            <AddIcon />
           </Fab>
         </Zoom>
       </form>
